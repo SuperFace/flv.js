@@ -107,7 +107,7 @@ class MSEController {
         ms.addEventListener('sourceclose', this.e.onSourceClose);
 
         this._mediaElement = mediaElement;
-        let URL = window.URL || window.webkitURL || window.mozURL || window.msURL
+        let URL = window.URL || window.webkitURL || window.mozURL || window.msURL;
         this._mediaSourceObjectURL = URL.createObjectURL(this._mediaSource);
         mediaElement.src = this._mediaSourceObjectURL;
     }
